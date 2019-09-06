@@ -46,7 +46,7 @@ reads in_file and writes to the corresponding out_file, if none is given, the fi
 
 starts a local flask webserver and opens the default browser to `localhost:port/upload`
 
-![image of the webserver page](assets/webserver.jpg)
+![image of the webserver page](assets/webserver.png)
 
 #### apiserver
 
