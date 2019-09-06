@@ -20,6 +20,40 @@ Thus (con) vert was born.
 Running `make install` will create a directory `~/.local/bin/python` if it doesn't already exist.
 Adding `~/.local/bin/python` to your $PATH variable will allow you to run `vert` from anywhere.
 
+## Usage
+
+`vert COMMAND`
+
+### Commands
+
+#### to_yaml
+
+`vert to_yaml in_file --out_file=OUT_FILE`
+
+reads in_file and writes to the corresponding out_file, if none is given, the filename without extension is used, but the converted extension is used. (eg. `vert to_yaml test.json` will write a `test.yaml` file in the same directory.
+
+
+#### to_json
+
+
+`vert to_json in_file --out_file=OUT_FILE`
+
+reads in_file and writes to the corresponding out_file, if none is given, the filename without extension is used, but the converted extension is used. (eg. `vert to_json test.yaml` will write a `test.json` file in the same directory.
+
+#### webserver
+
+`vert webserver --port=8888`
+
+starts a local flask webserver and opens the default browser to `localhost:port/upload`
+
+![image of the webserver page](assets/webserver.jpg)
+
+#### apiserver
+
+`vert apiserver --port=8080`
+
+starts a local flask webserver, will respond to multipart form uploads via curl/api POSTs on `localhost:port/api/v1/upload`
+
 ## Limitations
 
 This is basically a little side project to explicitly show myself that my idea wasn't out of the realm of possibility or reason, there's a LOT of edge cases and addenda that aren't covered. Under no circumstances should you run this as a production thing.
