@@ -1,6 +1,6 @@
 Click==7.0
 fire==0.2.1
-Flask==1.1.1
+Flask==2.3.2
 idna==2.8
 itsdangerous==1.1.0
 Jinja2==2.11.3
